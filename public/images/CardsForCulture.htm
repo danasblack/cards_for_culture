@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<!-- saved from url=(0027)http://localhost:3000/pages -->
+<html class="js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	
+
+
+	<style>
+	.parallax {
+		/* The image used */
+		background-image:
+		linear-gradient(
+			rgba(0, 0, 0, 0.6),
+			rgba(0, 0, 0, 0.6)
+			), url('images/martin-game-night.jpg');
+		min-width: 1366px;
+		/* Set a specific height */
+		min-height: 455px; 
+		left: 100%;
+		/* Create the parallax scrolling effect */
+		background-attachment: fixed;
+		background-position: center;
+		background-repeat: repeat;
+		background-size: cover;
+	}
+	</style>
+
+	<link rel="stylesheet" media="all" href="./CardsForCulture_files/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css" data-turbolinks-track="reload">
+<link rel="stylesheet" media="all" href="./CardsForCulture_files/application.self-af04b226fd7202dfc532ce7aedb95a0128277937e90d3b3a3d35e1cce9e16886.css" data-turbolinks-track="reload">
+	<script src="./CardsForCulture_files/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js" data-turbolinks-track="reload"></script>
+<script src="./CardsForCulture_files/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js" data-turbolinks-track="reload"></script>
+<script src="./CardsForCulture_files/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js" data-turbolinks-track="reload"></script>
+<script src="./CardsForCulture_files/action_cable.self-5454023407ffec0d29137c7110917e1e745525ae9afbc05f52104c4cd6597429.js" data-turbolinks-track="reload"></script>
+<script src="./CardsForCulture_files/cable.self-6e0514260c1aa76eaf252412ce74e63f68819fd19bf740595f592c5ba4c36537.js" data-turbolinks-track="reload"></script>
+<script src="./CardsForCulture_files/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js" data-turbolinks-track="reload"></script>
+<script src="./CardsForCulture_files/application.self-b89234cf2659d7fedea75bca0b8d231ad7dfc2f3f57fcbaf5f44ed9dc384137b.js" data-turbolinks-track="reload"></script>
+
+            <!-- Basic Page Needs
+            ================================================== -->
+            
+            
+            
+            
+            
+            
+            
+        <!-- Mobile Specific Metas
+        ================================================== -->
+        
+        
+        
+        <!-- Template CSS Files
+        ================================================== -->
+        <!-- Twitter Bootstrs CSS -->
+        <link rel="stylesheet" href="./CardsForCulture_files/bootstrap.min.css">
+        <!-- Ionicons Fonts Css -->
+        <link rel="stylesheet" href="./CardsForCulture_files/ionicons.min.css">
+        <!-- animate css -->
+        <link rel="stylesheet" href="./CardsForCulture_files/animate.css">
+        <!-- Hero area slider css-->
+        <link rel="stylesheet" href="./CardsForCulture_files/slider.css">
+        <!-- owl craousel css -->
+        <link rel="stylesheet" href="./CardsForCulture_files/owl.carousel.css">
+        <link rel="stylesheet" href="./CardsForCulture_files/owl.theme.css">
+        <link rel="stylesheet" href="./CardsForCulture_files/jquery.fancybox.css">
+        <!-- template main css file -->
+        <link rel="stylesheet" href="./CardsForCulture_files/main.css">
+        <!-- responsive css -->
+        <link rel="stylesheet" href="./CardsForCulture_files/responsive.css">
+        
+        <!-- Template Javascript Files
+        ================================================== -->
+        <!-- modernizr js -->
+        <script src="./CardsForCulture_files/modernizr-2.6.2.min.js"></script>
+        <!-- jquery -->
+        <script src="./CardsForCulture_files/jquery.min.js"></script>
+        <!-- owl carouserl js -->
+        <script src="./CardsForCulture_files/owl.carousel.min.js"></script>
+        <!-- bootstrap js -->
+
+        <script src="./CardsForCulture_files/bootstrap.min.js"></script>
+        <!-- wow js -->
+        <script src="./CardsForCulture_files/wow.min.js"></script>
+        <!-- slider js -->
+        <script src="./CardsForCulture_files/slider.js"></script>
+        <script src="./CardsForCulture_files/jquery.fancybox.js"></script>
+        <!-- template main js -->
+        <script src="./CardsForCulture_files/main.js"></script>
+    <style type="text/css">.fancybox-margin{margin-right:15px;}</style><title>CardsForCulture</title><meta name="csrf-param" content="authenticity_token"><meta name="csrf-token" content="tPOGBqrbLNzmyLhMjNfiG0MVJ/4EAPmBL1zkZn9xJQvjo1Uq+OkZwM4RqipvtVWI2pRwZGotFJMts16BybqosA=="><link rel="icon" type="image/png" href="http://localhost:3000/images/favicon.png"><title>Timer Agency Template</title><meta name="description" content=""><meta name="keywords" content=""><meta name="author" content=""><meta name="format-detection" content="telephone=no"><meta name="viewport" content="width=device-width, initial-scale=1"></head>
+
+    <body>
+  	<!--
+        ==================================================
+        Header Section Start
+        ================================================== -->
+        <header id="top-bar" class="navbar-fixed-top animated-header">
+        	<div class="container">
+        		<div class="navbar-header">
+        			<!-- responsive nav button -->
+        			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        				<span class="sr-only">Toggle navigation</span>
+        				<span class="icon-bar"></span>
+        				<span class="icon-bar"></span>
+        				<span class="icon-bar"></span>
+        			</button>
+        			<!-- /responsive nav button -->
+
+        			<!-- logo -->
+        			<div class="navbar-brand">
+        				<a href="http://localhost:3000/index.html" style="color: inherit;">
+        					<img src="./CardsForCulture_files/tri-card-logotype.png" alt="" id="logo-image">
+        				</a>
+        			</div>
+        			<!-- /logo -->
+        		</div>
+        		<!-- main menu -->
+        		<nav class="collapse navbar-collapse navbar-right" role="navigation">
+        			<div class="main-menu">
+        				<ul class="nav navbar-nav navbar-right">
+        					<li>
+        						<a href="http://localhost:3000/pages">Home</a>
+        					</li>
+        					<li><a href="http://localhost:3000/ourstory">Our Story</a></li>
+        					<li><a href="http://localhost:3000/service.html">Category Feud!</a></li>
+        					<li class="dropdown">
+        						<a href="http://localhost:3000/pages#" class="dropdown-toggle" data-toggle="dropdown">The Trivia Library <span class="caret"></span></a>
+        						<div class="dropdown-menu">
+        							<ul>
+        								<li><a href="http://localhost:3000/404.html">404 Page</a></li>
+        								<li><a href="http://localhost:3000/gallery.html">Gallery</a></li>
+        							</ul>
+        						</div>
+        					</li>
+        					<li class="dropdown">
+        						<a href="http://localhost:3000/pages#" class="dropdown-toggle" data-toggle="dropdown">Blog <span class="caret"></span></a>
+        						<div class="dropdown-menu">
+        							<ul>
+        								<li><a href="http://localhost:3000/blog-fullwidth.html">Blog Full</a></li>
+        								<li><a href="http://localhost:3000/blog-left-sidebar.html">Blog Left sidebar</a></li>
+        								<li><a href="http://localhost:3000/blog-right-sidebar.html">Blog Right sidebar</a></li>
+        							</ul>
+        						</div>
+        					</li>
+        					<li><a href="http://localhost:3000/contact.html">Contact</a></li>
+        				</ul>
+        			</div>
+        		</nav>
+        		<!-- /main nav -->
+        	</div>
+        </header>
+
+       
+
+              
+ <!--
+        ==================================================
+        Slider Section Start
+        ================================================== -->
+        <section id="hero-area">
+
+            <div class="homepage-hero-module">
+                  <div class="video-container">
+                        <div class="filter"></div>
+                        <video autoplay="" loop="" class="fillWidth">
+                              <source src="../images/header-video.mp4" type="video/mp4">Your browser does not support the video tag. I suggest you upgrade your browser.
+                              <source src="https://ak3.picdn.net/shutterstock/videos/16995163/preview/stock-footage--k-happy-group-of-friends-chatting-having-drinks-in-city-coffee-shop-uk-april.mp4" type="video/webm">Your browser does not support the video tag. I suggest you upgrade your browser.
+                        </video>
+
+                        <div class="overlay-text">
+                              <div class="well">
+                                    <img src="./CardsForCulture_files/cc-logo.png" alt="">
+                                    <a class="btn-lines dark light wow fadeInUp animated smooth-scroll btn btn-default btn-green" data-wow-delay=".9s" href="http://localhost:3000/pages#works" data-section="#works" id="header-btn">Shop Now</a>
+                              </div>
+                        </div>
+
+                        <div class="poster hidden">
+                              <img src="./CardsForCulture_files/slider.jpg" alt="">
+                        </div>
+                  </div>
+            </div>
+            
+        </section><!--/#main-slider-->
+
+  <!--
+            ==================================================
+            Portfolio Section Start
+            ================================================== -->
+            <section id="works" class="works">
+            	<div class="container">
+            		<div class="section-heading">
+            			<h1 class="title wow fadeInDown" data-wow-delay=".3s">What's In Your Library?</h1>
+            		
+            		</div>
+            		<div class="row">
+            			<div class="col-sm-4 col-xs-12">
+            				<figure class="wow fadeInLeft animated portfolio-item" data-wow-duration="500ms" data-wow-delay="0ms">
+            					<div class="img-wrapper">
+            						<img src="./CardsForCulture_files/romantic-comedy.png" class="img-responsive" alt="this is a title">
+            						<div class="overlay">
+            							<div class="buttons">
+            								<a rel="gallery" class="fancybox" href="http://localhost:3000/images/portfolio/item-1.jpg">Demo</a>
+            								<a target="_blank" href="http://localhost:3000/single-portfolio.html">Details</a>
+            							</div>
+            						</div>
+            					</div>
+            					<figcaption>
+            						<h4>
+            							<a href="http://localhost:3000/pages#">
+            								Romantic Comedy
+            							</a>
+            						</h4>
+            						<!-- <p>
+            							Redesigne UI Concept
+            						</p> -->
+            					</figcaption>
+            				</figure>
+            			</div>
+            			<div class="col-sm-4 col-xs-12">
+            				<figure class="wow fadeInLeft animated" data-wow-duration="500ms" data-wow-delay="300ms">
+            					<div class="img-wrapper">
+            						<img src="./CardsForCulture_files/deluxe-game.png" class="img-responsive" alt="this is a title">
+            						<div class="overlay">
+            							<div class="buttons">
+            								<a rel="gallery" class="fancybox" href="http://localhost:3000/images/portfolio/item-2.jpg">Demo</a>
+            								<a target="_blank" href="http://localhost:3000/single-portfolio.html">Details</a>
+            							</div>
+            						</div>
+            					</div>
+            					<figcaption>
+            						<h4>
+            							<a href="http://localhost:3000/pages#">
+            								Deluxe
+            							</a>
+            						</h4>
+            						<!-- <p>
+            							Lorem ipsum dolor sit.
+            						</p> -->
+            					</figcaption>
+            				</figure>
+            			</div>
+            			<div class="col-sm-4 col-xs-12">
+            				<figure class="wow fadeInLeft animated" data-wow-duration="500ms" data-wow-delay="300ms">
+            					<div class="img-wrapper">
+            						<img src="./CardsForCulture_files/DSC_0067.jpg" class="img-responsive" alt="">
+            						<div class="overlay">
+            							<div class="buttons">
+            								<a rel="gallery" class="fancybox" href="http://localhost:3000/images/portfolio/item-3.jpg">Demo</a>
+            								<a target="_blank" href="http://localhost:3000/single-portfolio.html">Details</a>
+            							</div>
+            						</div>
+            					</div>
+            					<figcaption>
+            						<h4>
+            							<a href="http://localhost:3000/pages#">
+            								Category Feud
+            							</a>
+            						</h4>
+            						<!-- <p>
+            							Lorem ipsum dolor sit amet.
+            						</p> -->
+            					</figcaption>
+            				</figure>
+            			</div>
+            			
+            		</div></div></section> <!-- #works -->
+
+
+            <!--
+            ==================================================
+            Slider Section Start
+            ================================================== -->
+            <section id="about">
+            	<div class="container">
+            		<div class="row">
+
+            			<div class="col-md-6 col-sm-6">
+            				<div class="block wow fadeInLeft" data-wow-delay=".3s" data-wow-duration="500ms">
+            					<h2>
+            						Pregame
+            					</h2>
+            					<p>
+            						Aliquam lobortis. Maecenas vestibulum mollis diam. Pellentesque auctor neque nec urna. Nulla sit amet est. Aenean posuere <br> tortor sed cursus feugiat, nunc augue blandit nunc, eu sollicitudin urna dolor sagittis lacus.
+            					</p>         			
+            				</div>
+            			</div>
+            			<div class="col-md-6 col-sm-6">
+            				<div class="overlay" id="game-ad">
+            					<div class="block wow fadeInRight" data-wow-delay=".3s" data-wow-duration="500ms">
+            						<img src="./CardsForCulture_files/Image-3.png" alt="" class="fancybox">
+            					</div>
+            				</div>
+            			</div>
+            		</div>
+            	</div>
+            </section> <!-- /#about -->
+
+            <!-- Parallex -->
+
+            <section id="first_parallax">
+
+            	<div class="parallax">
+                        <!-- <div class="container" id="message"><h2></h2>
+                            <p class="text-muted"><h3></h3></p>
+                            <ul class="list-inline social-buttons">
+                                <li><a href="https://twitter.com/search?q=dblack_codes"><i class="fa fa-twitter"></i></a>
+                                </li>
+                                <li><a href="https://github.com/danasblack"><i class="fa fa-github"></i></a></li>
+                            </li>
+                            <li><a href="https://www.linkedin.com/in/dana-black-53996b43?trk=hp-identity-photo"><i class="fa fa-linkedin"></i></a>
+                            </li>
+                        </ul>
+                    </div> -->
+                </div>
+
+            </section>
+            <!--
+            ==================================================
+            Slider Section Start
+            ================================================== -->
+            <section id="about">
+            	<div class="container">
+            		<div class="row">
+            			<div class="col-md-6 col-sm-6">
+            				<div class="block wow fadeInLeft" data-wow-delay=".3s" data-wow-duration="500ms">
+            					<h2>
+            						OUR STORY
+            					</h2>
+            					<p>
+            						Cards for the Culture is committed to reconnecting the culture through its trivia games by providing memorable and nostalgic experiences to new acquaintances, longtime friends, families, and loved ones.
+            					</p>
+
+            				</div>
+
+            			</div>
+            			<div class="col-md-6 col-sm-6">
+            				<div class="block wow fadeInRight" data-wow-delay=".3s" data-wow-duration="500ms">
+            					<img src="./CardsForCulture_files/dsc_0187.jpg" alt="">
+            				</div>
+            			</div>
+            		</div>
+            	</div>
+            </section> <!-- /#about -->
+
+            <!--
+            ==================================================
+            Portfolio Section Start
+            ================================================== -->
+            <section id="feature">
+            	<div class="container">
+            		<div style="overflow: hidden;">
+            			<!-- <iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/333663970&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe> -->
+            		</div>
+            	</div>
+            </section> <!-- /#feature -->
+
+            <!--
+            ==================================================
+            Call To Action Section Start
+            ================================================== -->
+            <section id="call-to-action">
+            	<div class="container">
+            		<div class="row">
+            			<div class="col-md-12">
+            				<div class="block">
+            					<h2 class="title wow fadeInDown" data-wow-delay=".3s" data-wow-duration="500ms">SO WHAT YOU THINK ?</h2>
+            						<p class="wow fadeInDown" data-wow-delay=".5s" data-wow-duration="500ms">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis,<br>possimus commodi, fugiat magnam temporibus vero magni recusandae? Dolore, maxime praesentium.</p>
+            						<a href="http://localhost:3000/contact.html" class="btn btn-default btn-contact wow fadeInDown" data-wow-delay=".7s" data-wow-duration="500ms">Contact With Me</a>
+            					</div>
+            				</div>
+
+            			</div>
+            		</div>
+            	</section>
+            	<!--
+            	==================================================
+            	Footer Section Start
+            	================================================== -->
+            	<footer id="footer">
+            		<div class="container">
+            			<div class="col-md-8">
+            				<p class="copyright">Copyright: <span>2017</span> . Design and Developed by <a href="http://localhost:3000/www.danasblack.com">D Black Web Development and Design</a></p>
+            			</div>
+            			<div class="col-md-4">
+            				<!-- Social Media -->
+            				<ul class="social">
+            					<li>
+            						<a href="http://wwww.fb.com/themefisher" class="Facebook">
+            							<i class="ion-social-facebook"></i>
+            						</a>
+            					</li>
+            					<li>
+            						<a href="http://wwww.twitter.com/themefisher" class="Twitter">
+            							<i class="ion-social-twitter"></i>
+            						</a>
+            					</li>
+            					<li>
+            						<a href="http://localhost:3000/pages#" class="Linkedin">
+            							<i class="ion-social-linkedin"></i>
+            						</a>
+            					</li>
+            					<li>
+            						<a href="http://wwww.fb.com/themefisher" class="Google Plus">
+            							<i class="ion-social-googleplus"></i>
+            						</a>
+            					</li>
+            				</ul>
+            			</div>
+            		</div>
+            		
+            	</footer> <!-- /#footer -->
+            
+            
+</body></html>

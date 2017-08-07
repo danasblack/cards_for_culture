@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CardsForCulture</title>
+	<%= csrf_meta_tags %>
+
+	<style>
+	.parallax {
+		/* The image used */
+		background-image:
+		linear-gradient(
+			rgba(355, 355, 355, 0.7),
+			rgba(355, 355, 355, 0.5)
+			), url('images/DSC_0028.jpg');
+		min-width: 1366px;
+		/* Set a specific height */
+		min-height: 455px; 
+		left: 100%;
+		/* Create the parallax scrolling effect */
+		background-attachment: fixed;
+		background-position: center;
+		background-repeat: repeat;
+		background-size: cover;
+	}
+	</style>
+
+	<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+	<%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+            <!-- Basic Page Needs
+            ================================================== -->
+            <meta charset="utf-8">
+            <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+            <link rel="icon" type="image/png" href="images/favicon.png">
+            <title>Timer Agency Template</title>
+            <meta name="description" content="">
+            <meta name="keywords" content="">
+            <meta name="author" content="">
+        <!-- Mobile Specific Metas
+        ================================================== -->
+        <meta name="format-detection" content="telephone=no">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!-- Template CSS Files
+        ================================================== -->
+        <!-- Twitter Bootstrs CSS -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <!-- Ionicons Fonts Css -->
+        <link rel="stylesheet" href="css/ionicons.min.css">
+        <!-- animate css -->
+        <link rel="stylesheet" href="css/animate.css">
+        <!-- Hero area slider css-->
+        <link rel="stylesheet" href="css/slider.css">
+        <!-- owl craousel css -->
+        <link rel="stylesheet" href="css/owl.carousel.css">
+        <link rel="stylesheet" href="css/owl.theme.css">
+        <link rel="stylesheet" href="css/jquery.fancybox.css">
+        <!-- template main css file -->
+        <link rel="stylesheet" href="css/main.css">
+        <!-- responsive css -->
+        <link rel="stylesheet" href="css/responsive.css">
+        
+        <!-- Template Javascript Files
+        ================================================== -->
+        <!-- modernizr js -->
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        <!-- jquery -->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <!-- owl carouserl js -->
+        <script src="js/owl.carousel.min.js"></script>
+        <!-- bootstrap js -->
+
+        <script src="js/bootstrap.min.js"></script>
+        <!-- wow js -->
+        <script src="js/wow.min.js"></script>
+        <!-- slider js -->
+        <script src="js/slider.js"></script>
+        <script src="js/jquery.fancybox.js"></script>
+        <!-- template main js -->
+        <script src="js/main.js"></script>
+    </head>
+
+    <body>
+  	<!--
+        ==================================================
+        Header Section Start
+        ================================================== -->
+        <header id="top-bar" class="navbar-fixed-top animated-header">
+        	<div class="container">
+        		<div class="navbar-header">
+        			<!-- responsive nav button -->
+        			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        				<span class="sr-only">Toggle navigation</span>
+        				<span class="icon-bar"></span>
+        				<span class="icon-bar"></span>
+        				<span class="icon-bar"></span>
+        			</button>
+        			<!-- /responsive nav button -->
+
+        			<!-- logo -->
+        			<div class="navbar-brand">
+        				<a href="index.html" >
+        					<img src="images/tri-card-logotype.png" alt="" id="logo-image">
+        				</a>
+        			</div>
+        			<!-- /logo -->
+        		</div>
+        		<!-- main menu -->
+        		<nav class="collapse navbar-collapse navbar-right" role="navigation">
+        			<div class="main-menu">
+        				<ul class="nav navbar-nav navbar-right">
+        					<li>
+        						<a href="/pages" >Home</a>
+        					</li>
+        					<li><a href="/ourstory">Our Story</a></li>
+        					<li><a href="service.html">Shop</a></li>
+        					<li class="dropdown">
+        						<a href="#" class="dropdown-toggle" data-toggle="dropdown">The Trivia Library <span class="caret"></span></a>
+        						<div class="dropdown-menu">
+        							<ul>
+        								<li><a href="404.html">404 Page</a></li>
+        								<li><a href="gallery.html">Gallery</a></li>
+        							</ul>
+        						</div>
+        					</li>
+        					<li class="dropdown">
+        						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Blog <span class="caret"></span></a>
+        						<div class="dropdown-menu">
+        							<ul>
+        								<li><a href="blog-fullwidth.html">Blog Full</a></li>
+        								<li><a href="blog-left-sidebar.html">Blog Left sidebar</a></li>
+        								<li><a href="blog-right-sidebar.html">Blog Right sidebar</a></li>
+        							</ul>
+        						</div>
+        					</li>
+        					<li><a href="contact.html">Contact</a></li>
+        				</ul>
+        			</div>
+        		</nav>
+        		<!-- /main nav -->
+        	</div>
+        </header>
+
+       
+
+            <%= yield %>
+
+            <!--
+            ==================================================
+            Call To Action Section Start
+            ================================================== -->
+            <section id="call-to-action">
+            <div class="container">
+            <div class="row">
+        	<div class="col-md-4 footer-nav animated fadeInUp">
+            	<h4>Menu —</h4>
+            	<div class="col-md-6">
+                    <ul class="pages">
+                        <li><a href="#">Travel</a></li>
+                        <li><a href="#">Nature</a></li>
+                        <li><a href="#">Explores</a></li>
+                        <li><a href="#">Science</a></li>
+                        <li><a href="#">Advice</a></li>
+                    </ul>
+                </div>
+            	<div class="col-md-6">
+                    <ul class="list">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contacts</a></li>
+                        <li><a href="#">Terms & Condition</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+        	<div class="col-md-2 footer-social animated fadeInDown">
+            	<h4>Follow Us</h4>
+            	<ul>
+                	<li><a href="#">Facebook</a></li>
+                	<li><a href="#">Twitter</a></li>
+                	<li><a href="#">Instagram</a></li>
+                	<li><a href="#">RSS</a></li>
+                </ul>
+            </div>
+        	<div class="col-md-3 footer-ns animated fadeInRight">
+            	<h4>Newsletter</h4>
+                <p>A rover wearing a fuzzy suit doesn’t alarm the real penguins</p>
+                <p>
+                    <div class="input-group">
+                      <input type="text" class="form-control" placeholder="Search for...">
+                      <span class="input-group-btn">
+                        <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-envelope"></span></button>
+                      </span>
+                    </div><!-- /input-group -->
+                 </p>
+            </div>
+        </div>
+            		</div>
+            	</section>
+            	<!--
+            	==================================================
+            	Footer Section Start
+            	================================================== -->
+            	<footer id="footer">
+            		<div class="container">
+            			<div class="col-md-8">
+            				<p class="copyright">Copyright: <span>2017</span> . Design and Developed by <a href="www.danasblack.com">D Black Web Development and Design</a></p>
+            			</div>
+            			<div class="col-md-4">
+            				<!-- Social Media -->
+            				<ul class="social">
+            					<li>
+            						<a href="http://wwww.fb.com/themefisher" class="Facebook">
+            							<i class="ion-social-facebook"></i>
+            						</a>
+            					</li>
+            					<li>
+            						<a href="http://wwww.twitter.com/themefisher" class="Twitter">
+            							<i class="ion-social-twitter"></i>
+            						</a>
+            					</li>
+            					<li>
+            						<a href="#" class="Linkedin">
+            							<i class="ion-social-linkedin"></i>
+            						</a>
+            					</li>
+            					<li>
+            						<a href="http://wwww.fb.com/themefisher" class="Google Plus">
+            							<i class="ion-social-googleplus"></i>
+            						</a>
+            					</li>
+            				</ul>
+            			</div>
+            		</div>
+            		
+            	</footer> <!-- /#footer -->
+            </body>
+            </html>
