@@ -1,4 +1,5 @@
-  
+
+
  <!--
         ==================================================
         Slider Section Start
@@ -14,10 +15,8 @@
                         </video>
 
                         <div class="overlay-text">
-                              <div class="well">
-                                    <img src="../images/cc-logo.png" alt="" id="logo-image-header">
-                                    <a class="btn-lines dark light wow fadeInUp animated smooth-scroll btn btn-default btn-green" data-wow-delay=".9s" href="#works" data-section="#works" id="header-btn" style="background-color: rgb(0,0,0); background:rgba(0, 0, 0, 0.6); color: white;">Shop Now</a>
-                              </div>
+                              <h6>Scroll Down</h6>
+                           <i class="fa fa-angle-double-down bounce fa-4x" aria-hidden="true"></i>
                         </div>
 
                         <div class="poster hidden">
@@ -26,7 +25,7 @@
                   </div>
             </div>
             
-        </section><!--/#main-slider-->
+      </section><!--/#main-slider-->
 
   <!--
             ==================================================
@@ -42,7 +41,7 @@
             				<figure class="wow fadeInLeft animated portfolio-item" data-wow-duration="500ms" data-wow-delay="0ms">
             					<div class="img-bar">
             						<img src="images/game-night.png" class="img-responsive" alt="this is a title" id="image-bar" >
-            					
+
             					</div>
             				</figure>
             			</div>
@@ -50,7 +49,7 @@
             				<figure class="wow fadeInLeft animated" data-wow-duration="500ms" data-wow-delay="300ms">
             					<div class="img-bar">
             						<img src="images/martin-deluxe.png" class="img-responsive" alt="this is a title" id="image-bar" >
-            					
+
             					</div>
             				</figure>
             			</div>
@@ -58,7 +57,7 @@
             				<figure class="wow fadeInLeft animated" data-wow-duration="500ms" data-wow-delay="300ms">
             					<div class="img-bar">
             						<img src="images/your-library.png" class="img-responsive" alt="" id="image-bar" >
-            				
+
             					</div>
             				</figure>
             			</div>
@@ -72,52 +71,61 @@
             ================================================== -->
             <section id="about">
             	<div class="container">
-            		<div class="row">
+            		<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                          <!-- Indicators -->
+                          <ol class="carousel-indicators">
+                            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                      </ol>
 
-            			<div class="col-md-6 col-sm-6">
-            				<div class="block wow fadeInLeft" data-wow-delay=".3s" data-wow-duration="500ms">
-            					<h2>
-            						Pregame
-            					</h2>
-            					<p>
-            						Aliquam lobortis. Maecenas vestibulum mollis diam. Pellentesque auctor neque nec urna. Nulla sit amet est. Aenean posuere <br> tortor sed cursus feugiat, nunc augue blandit nunc, eu sollicitudin urna dolor sagittis lacus.
-            					</p>         			
-            				</div>
-            			</div>
-            			<div class="col-md-6 col-sm-6">
-            				<div class="overlay" id="game-ad">
-            					<div class="block wow fadeInRight" data-wow-delay=".3s" data-wow-duration="500ms">
-            						<img src="images/portfolio/romantic-comedy.png" alt="" class="fancybox">
-            					</div>
-            				</div>
-            			</div>
-            		</div>
-            	</div>
-            </section> <!-- /#about -->
+                      <!-- Wrapper for slides -->
+                      <div class="carousel-inner" role="listbox">
+                            <div class="item active">
+                              <img src="images/blank-cards.jpeg" alt="...">
+                              <div class="carousel-caption">
+                                    <h3>Category Feud!</h3>
+                                <p>Category Feud! is a hybrid of Jeopardy! and Family Feud. 2 teams compete against each other to test their pop culture knowledge on a variety of subjects ranging from TV Shows, 90s R&B, Rap Lyrics, Black Cinema, etc...</p>
+                                <button type="button" class="btn btn-default">Explore</button>
+                          </div>
+                    </div>
+                    <div class="item">
+                        <img src="images/blank-cards.jpeg" alt="...">
+                        <div class="carousel-caption">
+                          <h3>Pregame</h3>
+                          <p>Aliquam lobortis. Maecenas vestibulum mollis diam. Pellentesque auctor neque nec urna. Nulla sit amet est. Aenean posuere <br> tortor sed cursus feugiat, nunc augue blandit nunc, eu sollicitudin urna dolor sagittis lacus.</p>
+                          <button type="button" class="btn btn-default">Explore</button>
+                    </div>
+              </div>
+              ...
+        </div>
 
-            <!-- Parallex -->
+        <!-- Controls -->
+        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+    </a>
+</div>
+</div>
+</section> <!-- /#about -->
 
-            <section id="first_parallax">
+<!-- Parallex -->
 
-            	<div class="parallax">
-                        <div class="parallax-text" id="message">
-                              <h1> Core Values</h1>
-                              <p class="text-muted"><h3>"We believe that people who value shared experiences with friends, family, loved ones, and new acquaintances make the world a better place" -Jason Gray, Founder.</h3></p>
-                        <!-- <div class="container" id="message"><h2></h2>
-                            <p class="text-muted"><h3></h3></p>
-                            <ul class="list-inline social-buttons">
-                                <li><a href="https://twitter.com/search?q=dblack_codes"><i class="fa fa-twitter"></i></a>
-                                </li>
-                                <li><a href="https://github.com/danasblack"><i class="fa fa-github"></i></a></li>
-                            </li>
-                            <li><a href="https://www.linkedin.com/in/dana-black-53996b43?trk=hp-identity-photo"><i class="fa fa-linkedin"></i></a>
-                            </li>
-                        </ul>
-                    </div> -->
-                      </div>
-                </div>
+<section id="first_parallax">
 
-            </section>
+ <div class="parallax">
+      <div class="parallax-text" id="message">
+            <h1> Core Values</h1>
+            <p class="text-muted"><h3>"We believe that people who value shared experiences with friends, family, loved ones, and new acquaintances make the world a better place" -Jason Gray, Founder.</h3></p>
+            <button type="button" class="btn btn-default">Meet Us</button>
+      </div>
+</div>
+
+</section>
             <!--
             ==================================================
             Slider Section Start
@@ -140,7 +148,7 @@
                   <div class="container">
                         <div class="section-heading">
                               <h1 class="title wow fadeInDown" data-wow-delay=".3s">Featured Products</h1>
-                        
+
                         </div>
                         <div class="row">
                               <div class="col-sm-4 col-xs-12">

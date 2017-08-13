@@ -90,9 +90,10 @@ a:hover {
   background: #444;
 }
 
-#logo-image{
+.navbar-brand img{
   height:30px;
-  width: 120px;
+  width: 380px;
+  margin-left: 450px;
 }
 #top-bar {
   background: #fff;
@@ -160,7 +161,7 @@ a:hover {
 #hero-area:before {
   content: '';
   z-index: 9;
-  background: rgba(0, 0, 0, 0.1);
+  background: rgba(0, 0, 0, 0.2);
   position: absolute;
   top: 0;
   left: 0;
@@ -248,7 +249,7 @@ a:hover {
   margin-right: 10px;
 }
 #about {
-  padding: 110px 0;
+  padding-bottom: 150px;
 }
 #about .block {
   padding: 0px 30px 50px 30px;
@@ -1143,7 +1144,7 @@ article {
     z-index: 100;
     position: absolute;
     background: rgba(255, 255, 255, 0.2);
-    width: 100%;
+    width: 1365px;
 }
 .video-container video {
     position: relative;
@@ -1151,7 +1152,7 @@ article {
     bottom: 0;
     left:0;
     top:0;
-    height: 100%;
+    height: 770px;
 }
 
 .video-container video.fillWidth {
@@ -1160,17 +1161,22 @@ article {
 
 .overlay-text {
     position:absolute;
-    top:480px;
-    margin-left: 200px;
+    top:680px;
+    margin-left: 670px;
     z-index:1;
 }
+
+.overlay-text h6 {
+margin-left: -10px;
+}
+
 
 .well {
   color:black;
   background-color: rgb(0,0,0); 
   background:rgba(0, 0, 0, 0.3);
   border: none;
-  padding: 50px;
+  padding: 60px;
  
 }
 
@@ -1218,5 +1224,70 @@ margin-right: 400px;
 
 .about-header-container{
 margin-left: 400px;
+}
+
+.carousel-caption {
+width:400px;
+margin-left: 380px;
+}
+
+.carousel-caption h3 {
+  color: black;
+  margin-right:0;
+}
+
+.carousel-caption p {
+  color: black;
+}
+
+.carousel-caption button{
+  background-color: #6e2585;
+  color: white;
+}
+
+.parallax-text button{
+  background-color: #6e2585;
+  color: white;
+}
+
+.bounce {
+  display: inline-block;
+  position: relative;
+  -moz-animation: bounce 0.5s infinite linear;
+  -o-animation: bounce 0.5s infinite linear;
+  -webkit-animation: bounce 0.5s infinite linear;
+  animation: bounce 0.5s infinite linear;
+  colr:000;
+}
+
+@-webkit-keyframes bounce {
+    0% { top: 0; }
+    50% { top: -0.2em; }
+    70% { top: -0.3em; }
+    100% { top: 0; }
+}
+@-moz-keyframes bounce {
+    0% { top: 0; }
+    50% { top: -0.2em; }
+    70% { top: -0.3em; }
+    100% { top: 0; }
+}
+@-o-keyframes bounce {
+    0% { top: 0; }
+    50% { top: -0.2em; }
+    70% { top: -0.3em; }
+    100% { top: 0; }
+}
+@-ms-keyframes bounce {
+    0% { top: 0; }
+    50% { top: -0.2em; }
+    70% { top: -0.3em; }
+    100% { top: 0; }
+}
+@keyframes bounce {
+    0% { top: 0; }
+    50% { top: -0.2em; }
+    70% { top: -0.3em; }
+    100% { top: 0; }
 }
 
